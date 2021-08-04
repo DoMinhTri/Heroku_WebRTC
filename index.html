@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebRTC</title>
+        <script src="jquery.js"></script>
+        <script src="peerjs.min.js"></script>
+        <script src="socket.io.js"></script>
+    </head>
+    <body>
+  
+	<div id="log" style="color:red"></div>
+	<div id="my-peer"></div>
+        <div id="div-chat">
+			<p>Chat :</p>
+            <ul id="ulUser">
+			
+            </ul>
+        </div>
+        <div id="div-dang-ky">
+            <input type="text" id="txtChat" placeholder="" value="Noi dung">
+            <button id="btSend">Send</button>
+        </div>
+    </body>
+    <script src="function.js"></script>
+</html>
