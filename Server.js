@@ -8,9 +8,12 @@ var server = require("http").Server(app);
 var io = require("socket.io")(server);
 server.listen(process.env.PORT||3000);
 //////////////////////////////////////////////////////////////
+const arrUserInfo = [];
+
 io.on("connection", socket => {
 	const id = socket.id;
 	console.log(id);
+	/////////
 	socket.on("disconnect", function(socket){
 
 	});
@@ -20,8 +23,7 @@ io.on("connection", socket => {
 	});
 });
 //////////////////////////////////////////////////////////////
-app.get("/", function(req, res){res.render("index");
-}); 
+app.get("/", function(req, res){res.render("index");}); 
 
 
 
